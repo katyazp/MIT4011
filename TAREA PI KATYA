@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main (int argc, char* argv[]) {
+      int i, j = 2, k = 1;
+      double pi = 2;
+ 
+      for (i = 0; i < 1000000000; i++){
+          pi *= (j / (double)k);
+ 
+          if (i % 2 == 0)
+             k += 2;
+          else
+              j += 2;
+      }
+ 
+      printf("\n Valor de Pi: %.54f \n", pi);
+ 
+      return 0;
+}
